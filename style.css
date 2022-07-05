@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    transition: all .5s ease-in-out;
+}
+
+.mode{
+    width: 70px;
+    height: 35px;
+    background-color: black;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    box-sizing: border-box;
+    transform: scale(1.2);
+    transition: all .5s ease-in-out;
+}
+
+.mode-moon{
+    width: 25px;
+    height: 25px;
+    background-image: url(./Media/moon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.mode-sun{
+    width: 25px;
+    height: 25px;
+    background-image: url(./Media/sun.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mode-ball{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    left: 5px;
+    transition: all .5s ease-in-out;
+}
+
+/* ---------------------- */
+
+.time{
+    display: flex;
+}
+
+.hour, .point, .minute, .text{
+    transition: all .5s ease-in-out;
+    font-size: 3rem;
+}
+
